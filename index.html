@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Bestämmer titel, charaktärs set och länkar till css filen-->
         <meta charset="utf-8">
         <title>Egen Webbplats</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="footer.js"></script>
     </head>
     <body>
+        <!-- Bestämmer vad som ska stå i header, nav, main och footer-->
         <header>
             <h1>Min Webbplats</h1>
         </header>
         <nav>
             <ul>
+                <!--Skapar en nav bar och länkar till respektive sidor-->
                 <li><a href="pageOne.html">Sida Ett</a></li>
                 <li><a href="index.html">Hem</a></li>
                 <li><a href="pageTwo.html">Sida Två</a></li>
             </ul>
         </nav>
         <main>
+            <!--Skapar en main och delar upp den i två sektioner-->
             <section class="text">
                   <h2>Hem</h2>
-                <p>Detta är min websida.<br> Klicka på bilden </p>
+                <p>Detta är min websida. Detta är landpunkten till min hemsida </p>
+                <p>Om du vill läsa mer om mig tryck på baguetten jämte</p>
+                <p> Denna websida är inspirerad av färgen grå och dess alla varianter</p>
             </section>
             <section class="image">
                 <a href="pageOne.html" >
                     <img src="161547448612618normal_Galeria.png" alt="Placeholder">
                 </a>  
             </section>
-           
         </main>
-        <footer>
-            <p>Leo Ungsten --- Na22b</p>
-        </footer>
+        <div id="footerContainer"></div>
     </body>
 </html>

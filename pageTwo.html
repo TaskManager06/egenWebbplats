@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Bestämmer titel, charaktärs set och länkar till css filen-->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <title>Egen Webbplats</title>
+    <script src="footer.js"></script>
 </head>
 <body>
     <header>
+        <!-- Bestämmer vad som ska stå i header, nav, main och footer-->
         <h1>Min Webbplats</h1>
     </header>
     <nav>
         <ul>
+            <!--Skapar en nav bar och länkar till respektive sidor-->
             <li><a href="pageOne.html">Sida Ett</a></li>
             <li><a href="index.html">Hem</a></li>
             <li><a href="pageTwo.html">Sida Två</a></li>
         </ul>
     </nav>
     <main>
+        <!--Skapar en main och delar upp den i två sektioner-->
         <section class="text">
-            <h2>En bild till</h2>
-            <p>Här är en till bild som representerar <input> </p>
+            <h2>Om Mig</h2>
+            <p>Jag heter Leo Ungsten och går 2an på katedralskolan</p>
         </section>
         <section class="image">
             <img src="161547448612618normal_Galeria.png" alt="Placeholder">
+            <img src="katedralskolan.png" alt="Katedralskolan bild">
         </section>
     </main>
-    <footer>
-        <p>Leo Ungsten --- Na22b</p>
-    </footer>
+    <div id="footerContainer"></div>
 </body>
 </html>

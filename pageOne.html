@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Bestämmer titel, charaktärs set och länkar till css filen-->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <title>Egen Webbplats</title>
+    <script src="footer.js"></script>
 </head>
 <body>
+    <!-- Bestämmer vad som ska stå i header, nav, main och footer-->
     <header>
-        <h1>Min Webbplats</h1>
+        <h1>Kontakt info</h1>
     </header>
     <nav>
         <ul>
+            <!--Skapar en nav bar och länkar till respektive sidor-->
             <li><a href="pageOne.html">Sida Ett</a></li>
             <li><a href="index.html">Hem</a></li>
             <li><a href="pageTwo.html">Sida Två</a></li>
         </ul>
     </nav>
+    <!--Skapar en tabbel för kontakt information-->
     <main class="tableGrid">
         <h2>Webläsare för-, nackdelar</h2>
         <table>
             <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>                     
+                <th>Person</th>
+                <th>Email</th>
+                <th>Telefonnummer</th>
+                <th>adress</th>                     
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Leo Ungsten</td>
+                <td>email@gmail.com</td>
+                <td>telefonnummer</td>
+                <td>adress</td>
             </tr>
         </table>
     </main>
-    <footer>
-        <p>Leo Ungsten --- Na22b</p>
-    </footer>
+    <div id="footerContainer"></div>
 </body>
 </html>

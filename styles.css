@@ -2,7 +2,6 @@
 Sätter även höjden till 100vh så sidan tar upp hela sidan och footern hamnar längst ner*/
 body{
 min-height: 100vh;
-
 background-color: #E5E4E2;
 color:#36454F;
 font-family:'Open Sans', sans-serif;
@@ -42,6 +41,7 @@ nav>ul>li{
     border:1px solid #A9A9A9;
     padding: 20px 45px;
 }
+/*Skapar en hover effekt på nav elementen*/
 nav>ul>li:hover{
 transform:scale(1.1)
 }
@@ -69,10 +69,18 @@ main{
     grid-area:img;
 }
 /*Fixar så bilderna tar upp 100% av sitt förälder element*/
-.image>a>img, .image>img{
-    width:100%;
+.image>a>img{
+    width:75%;
     height:100%;
 }
+/* minskar bilden så två bilder får plats och rundar kanterna*/
+.image>img{
+    width:75%;
+    height:50%;
+    margin:7px, 0px;
+    border-radius: 13%;
+}
+/*Skapar en hover effekt på bilderna*/
 .image>img:hover{
     transform:rotate(2deg);
 }
@@ -99,22 +107,24 @@ th{
     border-collapse:collapse;
 }
 /*Skapar zebra striping*/
-tr:nth-child(even){
+th:nth-child(even),td:nth-child(even){
     background-color:#808080;
 }
-tr:nth-child(odd){
+th:nth-child(odd),td:nth-child(odd){
     background-color:#708090;
 }
+/*Skapar padding för alla tabell element*/
 td,th{
     padding:35px;
 }
-
+/*Skapar en grid för tabellen*/
 .tableGrid{
     display:grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "main";
 }
+/*Placerar tabellen i main arean*/
 .tableGrid>h2{
     grid-area:main;
 }
