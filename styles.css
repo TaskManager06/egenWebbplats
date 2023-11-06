@@ -1,130 +1,135 @@
 /* Upsättning av generalla attributer som bakgrundsfärg, font, och att texten ska vara centrerad
 Sätter även höjden till 100vh så sidan tar upp hela sidan och footern hamnar längst ner*/
-body{
-min-height: 100vh;
-background-color: #E5E4E2;
-color:#36454F;
-font-family:'Open Sans', sans-serif;
-text-align: center;
-align-items: center;
-justify-content: center;
-display:grid;
-grid-template-columns: 1fr;
-grid-template-rows: auto auto 1fr 30px;
-row-gap: 15px;
-grid-template-areas: 
-"header"
-"nav"
-"main"
-"footer";
+body {
+	min-height: 100vh;
+	background-color: #e5e4e2;
+	color: #36454f;
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto 1fr 30px;
+	row-gap: 15px;
+	grid-template-areas:
+		"header"
+		"nav"
+		"main"
+		"footer";
 }
 /*Placerar header i header arean och tillsätter padding*/
-header{
-    grid-area: header;
-    padding:10px 50px;
+header {
+	grid-area: header;
+	padding: 10px 50px;
 }
 /*Specificerar att alla länkar ska vara färgade grå och inte ha någon dekoration*/
-a{
-    text-decoration: none;
-    color:#36454F;
+a {
+	text-decoration: none;
+	color: #36454f;
 }
 /*Nav bar*/
 /*Fyller ut dem klickbara elementen för att göra klick arean större*/
-nav>ul>li>a{
-    padding: 20px 65px;
+nav > ul > li > a {
+	padding: 20px 65px;
 }
 /*Specificerar färg, kant radie,kant och gör att listan blir horizontell*/
-nav>ul>li{
-    background:#D3D3D3;
-    border-radius: 4%;
-    display:inline-block;
-    border:1px solid #A9A9A9;
-    padding: 20px 45px;
+nav > ul > li {
+	background: #d3d3d3;
+	border-radius: 4%;
+	display: inline-block;
+	border: 1px solid #a9a9a9;
+	padding: 20px 45px;
 }
 /*Skapar en hover effekt på nav elementen*/
-nav>ul>li:hover{
-transform:scale(1.1)
+nav > ul > li:hover {
+	transform: scale(1.1);
 }
 /*Nav är i Nav arean*/
-nav{
-    grid-area: nav;
+nav {
+	grid-area: nav;
 }
 /*Placerar main i main arean, skapar även ett nytt grid för innehållet i main*/
-main{
-    grid-area: main;
-    height:100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "text img";
+main {
+	grid-area: main;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "text img";
 }
 /*Placerar en section med klassen text i text arean, och en section med klassen image i img arean*/
-.text{
-    line-break:auto;
-    grid-area:text;
-    background:#BEBEBE;
-    border-radius: 1% 10%;
+.text {
+	line-break: auto;
+	grid-area: text;
+	background: #bebebe;
+	border-radius: 1% 10%;
 }
-.image{
-    grid-area:img;
+.image {
+	grid-area: img;
 }
 /*Fixar så bilderna tar upp 100% av sitt förälder element*/
-.image>a>img{
-    width:75%;
-    height:100%;
+.image > h2 > a > img {
+	width: 75%;
+	height: 100%;
 }
 /* minskar bilden så två bilder får plats och rundar kanterna*/
-.image>img{
-    width:75%;
-    height:50%;
-    margin:7px, 0px;
-    border-radius: 13%;
+.image > h2 > img {
+	width: 75%;
+	height: 50%;
+	border-radius: 13%;
 }
 /*Skapar en hover effekt på bilderna*/
-.image>img:hover{
-    transform:rotate(2deg);
+.image > img:hover {
+	transform: rotate(2deg);
 }
 /*Placerar footern i footer arean*/
-footer{
-    grid-area: footer;
+footer {
+	grid-area: footer;
 }
 /*Tabell*/
 /*Fixerar tabellen i mitten genom att sätta margin till auto på det horizontella planet
 Berättar även att tabellen ska ta upp alla rader och berättar tabbelens bredd och höjd.*/
-table{
-    grid-area:main;
-    width:450px;
-    height:350px;
-    margin: 0 auto;
+table {
+	grid-area: main;
+	width: 450px;
+	height: 350px;
+	margin: 0 auto;
 }
 /*Skapar en kant runt alla tabell element och kollapsar dem så dem delar kant*/
-table,tr,td,th{
-    border: 1px solid black;
-    border-collapse: collapse;
+table,
+tr,
+td,
+th {
+	border: 1px solid black;
+	border-collapse: collapse;
 }
-th{
-    border:3px solid black;
-    border-collapse:collapse;
+th {
+	border: 3px solid black;
+	border-collapse: collapse;
 }
 /*Skapar zebra striping*/
-th:nth-child(even),td:nth-child(even){
-    background-color:#808080;
+th:nth-child(even),
+td:nth-child(even) {
+	background-color: #808080;
 }
-th:nth-child(odd),td:nth-child(odd){
-    background-color:#708090;
+th:nth-child(odd),
+td:nth-child(odd) {
+	background-color: #708090;
 }
 /*Skapar padding för alla tabell element*/
-td,th{
-    padding:35px;
+td,
+th {
+	padding: 35px;
 }
 /*Skapar en grid för tabellen*/
-.tableGrid{
-    display:grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: "main";
+.tableGrid {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	grid-template-areas: "main";
 }
 /*Placerar tabellen i main arean*/
-.tableGrid>h2{
-    grid-area:main;
+.tableGrid > h2 {
+	grid-area: main;
 }
