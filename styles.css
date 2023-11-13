@@ -65,6 +65,12 @@ main {
 	background: #bebebe;
 	border-radius: 1% 10%;
 }
+.text>figcaption{
+	font-size:20px;
+}
+.text>ul{
+	list-style-type:none;
+}
 .image {
 	grid-area: img;
 }
